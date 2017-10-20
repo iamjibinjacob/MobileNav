@@ -1,0 +1,77 @@
+@import "common/variables";
+@import "common/mixin";
+@import "common/global";
+
+#nav-icon {
+    cursor: pointer;
+    height: 30px;
+    margin-top: 8px;
+    position: relative;
+    @include rotate(0deg);
+    transition: all 0.5s ease-in-out 0s;
+    width: 30px;
+    span {
+        background: #ffffff none repeat scroll 0 0;
+        display: block;
+        height: 2px;
+        opacity: 1;
+        position: absolute;
+        @include rotate(0deg);
+        transition: all 0.25s ease-in-out 0s;
+        width: 50%;
+        &:nth-child(2n) {
+            left: 50%;
+        }
+        &:nth-child(2n+1) {
+            left: 0;
+        }
+        &:nth-child(1),  
+            &:nth-child(2) {
+            top: 0;
+        }
+        &:nth-child(3),  
+            &:nth-child(4) {
+            top: 10px;
+        }
+        &:nth-child(5),  
+            &:nth-child(6) {
+            top: 20px;
+        }		
+    }	
+    &.open{
+        span{
+            &:nth-child(1),  
+                &:nth-child(6) {
+                transform: rotate(45deg);
+            }
+            &:nth-child(2),  
+                &:nth-child(5) {
+                transform: rotate(-45deg);
+            }
+            &:nth-child(1) {
+                left: 3px;
+                top: 7px;
+            }
+            &:nth-child(2) {
+                left: calc(50% - 3px);
+                top: 7px;
+            }
+            &:nth-child(3) {
+                left: -50%;
+                opacity: 0;
+            }
+            &:nth-child(4) {
+                left: 100%;
+                opacity: 0;
+            }
+            &:nth-child(5) {
+                left: 3px;
+                top: 16px;
+            }
+            &:nth-child(6) {
+                left: calc(50% - 3px);
+                top: 16px;
+            }
+        }
+    }
+}

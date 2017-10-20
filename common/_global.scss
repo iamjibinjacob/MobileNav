@@ -1,0 +1,163 @@
+body, button, input, select, table, textarea{
+	font-family:$font-family-sans-serif;	
+}
+h2, .h2{font-family:$font-family-sans-serif;}
+a:focus, a:hover{
+	outline-color: #353736;
+}
+.input-text{
+	border: 1px solid #d4d4d4;
+	border-radius:0;
+	&:focus{
+		border: 1px solid #353736;
+	}
+}
+b, strong {
+	color: $grey;
+	font-size: 16px;
+	font-weight: 600;
+}
+p {
+	color: $grey;
+	line-height: 28px;
+}
+label{
+	font-family:$font-family-sans-serif;
+}
+.btn-shop {
+	background-color: $theme-color;
+	border: 1px solid $theme-color;
+	color: #ffffff;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 8px 15px;
+	text-transform: uppercase;
+	line-height: 1.5;
+	@include transition(all 0.5s ease 0s);
+	&:hover,&:focus{
+		background-color: transparent;
+		text-decoration: none;
+		color: #ffffff;
+	}
+	&.inverse{
+		background-color: $black;
+		border: 1px solid $black;
+		&:hover,&:focus{
+			background-color: transparent;
+			text-decoration: none;
+			color: $black;
+		}
+	}
+	&.white{
+		background-color: #ffffff;
+		border: 1px solid #ffffff;
+		color: $black;
+		&:hover,&:focus{
+			background-color: transparent;
+			text-decoration: none;
+			color: #ffffff;
+		}
+	}
+}
+.buttons-set .button, 
+.cart-table .product-cart-actions .button, 
+#co-shipping-method-form .buttons-set .button, 
+.footer .button,
+.button, 
+.cart-table .product-cart-actions .button, 
+#co-shipping-method-form .buttons-set .button, 
+.footer .button,.button2,
+.cart .buttons-set .button, 
+.cart-table .button, 
+.sidebar .actions .button, 
+.button.button-secondary{
+	background-color: $theme-color;
+	border: 1px solid $theme-color;
+	color: #ffffff;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 8px 15px;
+	text-transform: uppercase;
+	line-height: 1.5;
+	font-family: $font-family-sans-serif;
+	@include transition(all 0.5s ease 0s);
+	&:hover,&:focus{
+		background-color: transparent;
+		border: 1px solid $black;
+		text-decoration: none;
+		color: $black ;
+	}
+}
+.buttons-set{
+	border:none;
+	text-align: left;
+	button.button{
+		float: none;
+		margin-left: 0;
+	}
+}
+a {
+	color: #0275d8;
+	text-decoration: none;
+}
+.title-page {
+	display: block;
+	margin: 20px 0 50px;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	padding:0 15px;
+	h2{
+		&.subtitle{
+			border: medium none;
+			color: #666666;
+			display: inline-block;
+			font-size: 18px;
+			font-weight: 600;
+			margin: 0;
+			padding: 0;
+			position: relative;
+			text-transform: uppercase;
+			&:before {
+				background: #d3d3d3 none repeat scroll 0 0;
+				bottom: -15px;
+				content: "";
+				height: 2px;
+				left: 50%;
+				margin-left: -25px;
+				position: absolute;
+				width: 50px;
+			}
+		}
+	}
+}
+.max-width{
+	max-width:455px;
+	button{
+		&.button{
+			float: right;
+		}
+	}
+}
+.form-list {
+	margin-bottom: 0;
+}
+p {
+	margin-bottom: 0.2rem !important;
+	a{
+		color:$black;
+		text-decoration: underline;
+	}
+}
+.disc {
+	a {
+		color: $theme-color;
+		font-family:$sub-heading;
+		text-decoration: underline;
+		font-size: 16px;
+		font-style: italic;
+		@include transition(all 0.5s ease 0s);
+	}
+}

@@ -1,0 +1,25 @@
+// colors
+$brown	: 	#353736;
+$theme-color : #e73571;
+$grey	: #666;
+$greylight	:#b3b3b3;
+$black	: #353736;
+$brand-primary:#333;
+
+
+// Fonts
+$font-family-sans-serif:'Poppins', sans-serif;
+$sub-heading:'Libre Baskerville', serif;
+$title-font: 'Raleway', sans-serif;
+$font-size-base: 0.875rem !default;
+
+$breakpoint-tablet: 768px;
+
+
+// Bootstarp
+$container-max-widths: (
+	lg: 960px,
+	xl: 1300px
+	) !default;
+
+$topbar:45px;
